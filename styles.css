@@ -54,7 +54,7 @@ heading h2{
     height: auto;
     margin: 0 auto;
     padding: 3rem;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: start;
     align-items: stretch;

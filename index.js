@@ -65,6 +65,8 @@ fetchItems()
 
  //print data from local storage to ui
  function printInfoOnUI(){
+
+   displayContainer.style.display = "none"
     displayContainer.innerHTML = ""
      websiteInfo.forEach(function(item){
         let itemNameToPrint = item.websiteNAme
@@ -99,6 +101,9 @@ fetchItems()
         researchItemDiv.append(titleAndDeleteContainerDiv, descriptionOfWebsiteDiv)
         displayContainer.append(researchItemDiv)
      })
+     if(displayContainer.innerHTML.trim() !== ""){
+      displayContainer.style.display = "block"
+     }
  }
 
 
