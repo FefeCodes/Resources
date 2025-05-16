@@ -102,7 +102,7 @@ fetchItems()
         displayContainer.append(researchItemDiv)
      })
      if(displayContainer.innerHTML.trim() !== ""){
-      displayContainer.style.display = "block"
+      displayContainer.style.display = "flex"
      }
  }
 
